@@ -33,3 +33,7 @@
       description: "Password of the administrator"
       label: "password"
       type: "string"
+parse-server:
+  scale: 1
+mongo:
+  scale: 1
