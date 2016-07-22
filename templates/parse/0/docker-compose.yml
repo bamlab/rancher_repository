@@ -5,8 +5,8 @@ parse-server:
   environment:
     PORT: 1337
     # DATABASE_URI: $DATABASE_URI
-    APP_ID: app_id
-    MASTER_KEY: master_key
+    APP_ID: ${app_id}
+    MASTER_KEY: ${master_key}
     # PARSE_MOUNT: $PARSE_MOUNT # /parse
     # COLLECTION_PREFIX: $COLLECTION_PREFIX
     # CLIENT_KEY: $CLIENT_KEY
@@ -16,7 +16,7 @@ parse-server:
     # DOTNET_KEY: $DOTNET_KEY
     # FILE_KEY: $FILE_KEY
     # FACEBOOK_APP_IDS: $FACEBOOK_APP_IDS
-    SERVER_URL: server_url
+    SERVER_URL: ${server_url}
     # MAX_UPLOAD_SIZE: $MAX_UPLOAD_SIZE # 20mb
     # GCM_ID: $GCM_ID
     # GCM_KEY: $GCM_KEY
@@ -106,20 +106,20 @@ parse-dashboard:
   links:
     - parse-server
   environment:
-    APP_ID: app_id
-    MASTER_KEY: master_key
+    APP_ID: ${app_id}
+    MASTER_KEY: ${master_key}
     # APP_NAME: $APP_NAME
-    ALLOW_INSECURE_HTTP: parse_allow_insecure
-    USER1: user_1
-    USER1_PASSWORD: user_1_password
-    PARSE_DASHBOARD_ALLOW_INSECURE_HTTP: parse_allow_insecure
-    SERVER_URL: server_url
-    PARSE_DASHBOARD_SERVER_URL: server_url
-    PARSE_DASHBOARD_MASTER_KEY: master_key
-    PARSE_DASHBOARD_APP_ID: app_id
+    ALLOW_INSECURE_HTTP: ${parse_allow_insecure}
+    USER1: ${user_1}
+    USER1_PASSWORD: ${user_1_password}
+    PARSE_DASHBOARD_ALLOW_INSECURE_HTTP: ${parse_allow_insecure}
+    SERVER_URL: ${server_url}
+    PARSE_DASHBOARD_SERVER_URL: ${server_url}
+    PARSE_DASHBOARD_MASTER_KEY: ${master_key}
+    PARSE_DASHBOARD_APP_ID: ${app_id}
     # PARSE_DASHBOARD_APP_NAME: $APP_NAME
-    PARSE_DASHBOARD_USER_ID: user_1
-    PARSE_DASHBOARD_USER_PASSWORD: user_1_password
+    PARSE_DASHBOARD_USER_ID: ${user_1}
+    PARSE_DASHBOARD_USER_PASSWORD: ${user_1_password}
     # PARSE_DASHBOARD_CONFIG: $PARSE_DASHBOARD_CONFIG
     # MOUNT_PATH: $PARSE_DASHBOARD_MOUNT_PATH
     # TRUST_PROXY: $PARSE_DASHBOARD_TRUST_PROXY
