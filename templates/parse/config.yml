@@ -1,9 +1,6 @@
 name: Parse Server
-description: |
-  Parse Server with cloud.
+description: Parse Server.
 version: 1.0.0
 category: Databases
 maintainer: "Tycho Tatitscheff <tychot@bamlab.fr>"
-minimum_rancher_version: v0.56.0
-uuid: parse-0
 license: MIT

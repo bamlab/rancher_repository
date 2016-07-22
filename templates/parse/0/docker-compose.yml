@@ -58,8 +58,6 @@ parse-server:
     # LIVEQUERY_CLASSES: $LIVEQUERY_CLASSES
   links:
     - mongo
-  labels:
-    io.rancher.container.hostname_override: container_name
   restart: always
   volumes_from:
     - parse-cloud-code

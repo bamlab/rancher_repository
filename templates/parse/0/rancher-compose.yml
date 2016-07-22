@@ -2,34 +2,39 @@
   name: "Parse Server"
   version: 1.0.0
   description: "Parse Server"
-  uuid: parse-0
+
   questions:
     - variable: app_id
       description: "Application id for parse server"
       label: "Application ID"
       type: "string"
       required: true
+    
   - variable: master_key
       description: "Master Key for parse server"
       label: "Master Key"
       type: "string"
       required: true
+
   - variable: server_url
       description: "Url of the server parse"
       label: "Server URL"
       type: "string"
       required: true
       default: "http://localhost:1337/parse"
+
   - variable: parse_allow_insecure
       description: "Set it to 1 to allow insecure connection"
       label: "Allow insecure"
       type: "int"
       required: true
       default: 1
+
   - variable: user_1
       description: "Username of the administrator"
       label: "username"
       type: "string"
+
   - variable: user_1_password
       description: "Password of the administrator"
       label: "password"
