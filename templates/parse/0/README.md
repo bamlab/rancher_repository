@@ -5,7 +5,7 @@
  This templates creates a complete [Parse Server](https://github.com/getsentry/sentry) setup including mongo, dashboard, and cloud server.
 
  Images are the offical images from:
- * {Parse Server Docker](https://github.com/yongjhih/docker-parse-server)
+ * [Parse Server Docker](https://github.com/yongjhih/docker-parse-server)
 
 ### Usage:
 
