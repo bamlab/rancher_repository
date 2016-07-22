@@ -1,7 +1,7 @@
 name: Parse Server
 description: |
   Parse Server with cloud.
-version: 1.0-bam
+version: 1.0.0
 category: Databases
 maintainer: Tycho Tatitscheff <tychot@bamlab.fr>
 license: MIT
