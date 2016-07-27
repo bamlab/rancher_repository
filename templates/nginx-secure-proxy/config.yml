@@ -1,0 +1,5 @@
+---
+name: Nginx LetsEncrypt Proxy
+description: This stack proxy other container output to https
+version: 1.0.0
+category: Proxy
