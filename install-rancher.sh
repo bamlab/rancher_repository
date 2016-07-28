@@ -1,0 +1,3 @@
+docker run -d -v /path/to/certs:/etc/nginx/certs:rw --volumes-from nginx-proxy -v /var/run/docker.sock:/var/run/docker.sock:ro --name lets-encrypt-companion jrcs/letsencrypt-nginx-proxy-companion
+docker run -d -v /path/to/certs:/etc/nginx/certs:rw --volumes-from nginx-proxy -v /var/run/docker.sock:/var/run/docker.sock:ro jrcs/letsencrypt-nginx-proxy-companion
+docker run -d --restart=always -e "VIRTUAL_PORT=8080" -e "VIRTUAL_HOST=rancher.tatitscheff.me" -e "LETSENCRYPT_HOST=rancher.tatitscheff.me" -e "LETSENCRYPT_EMAIL=tychot@bamlab.fr" -v /srv/mysql:/var/lib/mysql --name=rancher-server rancher/server
