@@ -4,6 +4,8 @@ nginx:
   ports:
     - "80:80"
     - "443:443"
+  labels:
+    io.rancher.container.pull_image: always
   volumes:
     - /srv/docker/nginx/certs:/etc/nginx/certs:ro
     - /etc/nginx/vhost.d
@@ -12,6 +14,8 @@ nginx:
 
 letsencrypt:
   image: jrcs/letsencrypt-nginx-proxy-companion
+  labels:
+    io.rancher.container.pull_image: always
   volumes:
     - /srv/docker/nginx/certs:/etc/nginx/certs:rw
     - /var/run/docker.sock:/var/run/docker.sock
