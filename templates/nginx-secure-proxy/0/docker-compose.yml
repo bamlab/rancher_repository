@@ -5,7 +5,9 @@ nginx:
     - "80:80"
     - "443:443"
   labels:
+    io.rancher.scheduler.global: 'true'
     io.rancher.container.pull_image: always
+    io.rancher.sidekicks: letsencrypt
   volumes:
     - /srv/docker/nginx/certs:/etc/nginx/certs:ro
     - /etc/nginx/vhost.d

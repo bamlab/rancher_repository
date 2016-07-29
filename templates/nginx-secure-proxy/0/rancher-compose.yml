@@ -1,6 +1,6 @@
 .catalog:
   name: Nginx LetsEncrypt Proxy
-  version: 1.2.0
+  version: 1.3.0
   description: This stack proxy other container output to https
 nginx:
   scale: 1
